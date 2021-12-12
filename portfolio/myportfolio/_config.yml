@@ -1,0 +1,19 @@
+title: "Monta Pecina portfolio"
+description: "Monta Pecina portfolio. Open for job opportunities, preferably remote. Looking for entry level front-end developer position."
+baseurl: ""
+url: ""
+development: true
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme
+  - browserslist
+
+plugins:
+  - jekyll-coffeescript
+  - octopress-autoprefixer
+
+sass:
+  sass_dir: _sass
+  style: expanded

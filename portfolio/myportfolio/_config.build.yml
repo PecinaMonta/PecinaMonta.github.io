@@ -1,0 +1,19 @@
+title: ""
+description: ""
+baseurl: ""
+url: ""
+development: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - readme
+  - browserslist
+
+plugins:
+  - jekyll-coffeescript
+  - octopress-autoprefixer
+
+sass:
+  sass_dir: _sass
+  style: compressed
