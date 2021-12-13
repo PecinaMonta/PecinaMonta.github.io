@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>http://localhost:4000</title>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+     <!-- Style-->   
+    <link rel='stylesheet' href='/template/style/style.css' type='text/css' media='all' />
+
+    <!-- Javascript -->
+    <!-- <script src="template/js/burger-nav.js" type="text/javascript"></script>-->
+    <!--<script src="template/js/jquery.min.js" type="text/javascript"></script>
+    <script src="template/js/app.js" type="text/javascript"></script>-->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="template/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="template/img/favicon/favicon-16x16.png">
+    <!--<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">-->
+
+    <!-- Add social icon library ??????-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="http://localhost:4000">
+    <meta name="description" content="Monta Pecina portfolio. Open for job opportunities, preferably remote. Looking for entry level front-end developer position.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://localhost:4000"> 
+    <meta property="og:title" content="http://localhost:4000"> 
+    <meta property="og:description" content="Monta Pecina portfolio. Open for job opportunities, preferably remote. Looking for entry level front-end developer position.">
+    <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> <!--PARMAINIIT-->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://localhost:4000"> 
+    <meta property="twitter:title" content="http://localhost:4000">
+    <meta property="twitter:description" content="Monta Pecina portfolio. Open for job opportunities, preferably remote. Looking for entry level front-end developer position.">
+    <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png"> <!--PARMAINIIT-->
+
+</head>
+<body>
+
+<header>
+    <div class="contact-container"> <!--container neliek klāt flexbox etc, ar css neaiztiek, viņš ir domāts tikai lai norobežotu saturu-->
+        <div class="contact-header-box"> <!-- Viss header containeris - Priekš layout mainīšanas - flexbox etc --> 
+            <div class="contact-header-top"> <!-- Header augšas box -->
+                <!-- Text Name Surname -->
+                <div class="contact-left-side-text">
+                    <p>Monta Pecina</p>
+                </div>
+                <!-- Navigation and Social icons -->
+                <div class="contact-right-side-nav-social">
+                    <!-- Navigation -->
+                    <div class="contact-navigation">
+                        <a class="contact-nav-button" href="javascript:void(0);" class="contact-icon" onclick="myFunction()">
+                        <i class="fas fa-bars"></i></a>
+                        <nav>
+                            <ul>
+                                <li id="nav-first"><a href="#" target="_blank">Darbu saraksts</a></li>
+                                <li id="nav-second"><a class="download-icon" href="/template/img/footer/MontaPecinaCV.jpg" target="_blank" download><i class="fas fa-cloud-download-alt"></i></a><a href="#" target="_blank">Mans CV</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Social icons -->
+                    <div class="contact-social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/PecinaMonta" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>    
+                </div>
+            </div>
+            <div class="contact-header-bottom"> <!-- Header apakšas box -->
+                 <!-- Contact text-->
+                <div class="contact-page-name">
+                <p>Kontakti</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="contact-container"> <!--container neliek klāt flexbox etc, ar css neaiztiek, viņš ir domāts tikai lai norobežotu saturu-->
+    <div class="contact-content-box"> <!-- Viss main containeris - Priekš layout mainīšanas - flexbox etc --> 
+        <!-- Contact form middle content - form -->
+        <form class="contact-form-box" action="index.html">
+            <div class="contact-form-box-text">
+                <p>Pellentesque eu tellus eros. Nam ut turpis libero. Morbi tempor pellentesque commodo. Sed vel consequat leo. Vivamus felis erat, commodo vel tempor ac, auctor et justo. Donec risus nisi, dapibus a ullamcorper in, faucibus vulputate sapien.</p>
+            </div>
+            
+            <div class="contact-form-box-input-fields">
+                <div class="contact-wrap-input-fiels">
+                <label for="username"></label>
+                <br><input type="text" id="username" name="username" placeholder="Tavs vārds:" required/><br>
+
+                <label for="email"></label>
+                <br><input type="email" id="email" name="e-mail" placeholder="Tavs e-pasts:" required/><br>
+                 </div>
+                <label for="text"></label>
+                <br><input type="text" id="text" name="text" placeholder="Tavs teksts:" style="height: 100px" maxlength="100" required/><br>
+            </div>
+
+            <!-- Bottom Button-->
+            <div class="contact-form-box-submit-button">
+                <a href="" class="contact-form-box-submit-button-text">Apskatīt</a>
+            </div>
+        </form>
+
+        
+        <!-- Contact form bottom content -->
+        <div class="contact-bottom-box">
+            <!-- Bottom text -->
+            <div class="contact-bottom-text">
+                <p>
+                    Sazinies ar mani!
+                </p>
+            </div>
+            <!-- Bottom social icons -->
+            <div class="contact-bottom-social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<footer>
+    <div class="footer-container"> <!--container neliek klāt flexbox etc, ar css neaiztiek, viņš ir domāts tikai lai norobežotu saturu-->
+        <div class="footer-box"> <!-- Viss footer containeris - Priekš layout mainīšanas - flexbox etc --> 
+            <!-- Navigation and Copyright-->
+            <div class="footer-left-side-navigation">
+                <!-- Navigation -->
+                <div class="footer-navigation">
+                    <nav>
+                        <ul>
+                            <li><a class="nav-first" href="https://webskola.lv/lv" target="_blank">Webskola</a></li>
+                            <li><a class="nav-second" href="contact.html" target="_blank">Kontakti</a></li>
+                            <li><a class="nav-third" href="/template/img/footer/MontaPecinaCV.jpg" target="_blank" download>Mans CV</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-right-side-copyright">
+                <p>(c) 2021, Author Monta Peciņa</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
