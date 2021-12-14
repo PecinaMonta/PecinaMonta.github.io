@@ -1,0 +1,201 @@
+header{
+
+    .landing-header-container{
+        padding: 0;
+    }
+    
+    .landing-header-box{
+        position: relative;
+        background-image: url(/template/img/header/landing-header-img.svg);
+        @include bg-prop;
+        z-index: 2;
+        
+        &:before{
+            content: '';
+            display: block;
+            background-color: rgba($color: black, $alpha: 0.4);
+            @include full-absolute;
+            z-index: 1;
+        }
+    }
+    
+    .landing-header-top{
+        @include full-absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba($color: black, $alpha: 0.4);
+        height: 62px;
+        align-items: center;
+        padding-right: 35px;
+        padding-left: 35px;
+
+        @media #{$bigDesktop}{
+            background-color: transparent;
+        }
+    }
+    
+    .landing-left-side-text{
+        p{
+            
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            
+        }
+       
+    }
+
+    .landing-right-side-nav-social{
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            }
+    }
+        
+    .landing-navigation{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            }
+    }
+         
+    .landing-nav-button{
+        //font-family: Font Awesome 5 Free;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 25px;
+        color: #FFFFFF;
+        
+        @media #{$tablet}{
+            display: none;
+             }
+
+            
+    }
+    nav{
+        display: none;
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            }
+        }
+        ul{
+            @media #{$tablet}{
+                display:flex;
+                flex-direction: row;
+                }
+            li{
+                padding-left: 23px;
+                a{
+                    float: left;
+                    color: #FFFFFF;
+
+                }
+
+                &:hover{
+                    a{font-weight: bolder;}
+                }
+
+            }
+            .download-icon{
+                display: inline-block;
+                width: 20px;
+                height: 18px;
+                color: #FFFFFF;
+                margin-right: 5px;
+            }
+        }
+    
+
+    .landing-social-icons{
+        display: none;
+
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            padding-left: 39px;
+        }
+        a{ float: left;
+            color: #FFFFFF;}
+
+                &:hover{
+                    a{font-weight: bolder;}
+                }
+        i{
+            padding-right: 20px;
+        }
+    }
+
+
+    .navigation.icon {
+        float: right;
+      }
+
+    .landing-header-bottom{
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+    .landing-main-name{
+        padding-top: 186px;
+        padding-left: 24px;
+        padding-right: 24px;
+        
+        p{
+            
+            line-height: $lineHeight55px;
+            font-size: $fontSize42px;
+            color: #FFFFFF;
+            font-weight: $fontWeight500;
+        }
+    }
+    .landing-main-text{
+        padding-left: 24px;
+        padding-right: 24px;
+        
+
+        p{
+            line-height: $lineHeight21px;
+            font-size: $fontSize16px;
+            color: #FFFFFF;
+            font-weight: $fontWeight400;
+        }
+    }    
+    .landing-main-bottom-button{
+        
+        padding-top: 40px;
+        padding-bottom: 186px;
+        
+        
+    }
+        .landing-bottom-button{
+            //width: 171px;
+            //height: 54px;
+            //font-family: Font Awesome 5 Free;
+            background-color: $red;
+            color: $white;
+            font-size: $fontSize14px;
+            text-transform: uppercase;
+            align-items: center;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            padding-left: 36px;
+            padding-right: 36px;
+            
+            i{
+                margin-right:5px;
+            }
+    
+        
+    }
+               
+}

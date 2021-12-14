@@ -1,0 +1,132 @@
+header{
+
+    .portfolio-container{
+        padding: 0;
+    }
+    
+    .portfolio-header-box{
+        //position: relative;
+        background-image: url(/template/img/portfolio-content/portfolio-header-img.svg);
+        @include bg-prop;
+        z-index: 2;
+        height: 380px;
+        
+        &:before{
+            content: '';
+            display: block;
+            background-color: rgba($color: black, $alpha: 0.4);
+            //@include full-absolute;
+            z-index: 1;
+           
+        }
+
+        
+    }
+    
+    .portfolio-header-top{
+        @include full-absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgba($color: black, $alpha: 0.4);
+        height: 62px;
+        align-items: center;
+        padding-right: 35px;
+        padding-left: 35px;
+
+        @media #{$bigDesktop}{
+            background-color: transparent;
+        }
+        
+    }
+    
+    .portfolio-left-side-text{
+        p{
+            
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+            
+        }
+       
+    }
+
+    .portfolio-right-side-nav-social{
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            }
+    }
+        
+    .portfolio-navigation{
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+         
+    .portfolio-nav-button{
+        //font-family: Font Awesome 5 Free;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 22px;
+        line-height: 25px;
+        color: #FFFFFF;
+
+        @media #{$tablet}{
+            display: none;
+             }
+    }
+    nav{
+        display: none;
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            }
+        ul{
+            @media #{$tablet}{
+                display:flex;
+                flex-direction: row;
+                }
+            li{padding-left: 23px;
+                a{
+                    float: left;
+                    color: #FFFFFF;
+                }
+
+                &:hover{
+                    a{font-weight: bolder;}
+                }
+
+            }
+            .download-icon{
+                display: inline-block;
+                width: 20px;
+                height: 18px;
+                color: #FFFFFF;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    .portfolio-social-icons{
+        display: none;
+
+        @media #{$tablet}{
+            display:flex;
+            flex-direction: row;
+            padding-left: 39px;
+        }
+        a{ float: left;
+            color: #FFFFFF;}
+
+                &:hover{
+                    a{font-weight: bolder;}
+                }
+        i{padding-right: 20px;
+            
+        }
+    }
+}
